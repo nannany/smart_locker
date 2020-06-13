@@ -1,4 +1,4 @@
-package nannany.smartlocker
+package nannany.smart_locker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
