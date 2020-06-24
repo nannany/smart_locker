@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "384956494668",
+    "firebase_url": "https://smart-locker-a6465.firebaseio.com",
+    "project_id": "smart-locker-a6465",
+    "storage_bucket": "smart-locker-a6465.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384956494668:android:16a9fb834d303153ee95e9",
+        "android_client_info": {
+          "package_name": "nannany.smart_locker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384956494668-3pps1o8u67r9789ag3f3uljhklb8uvoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsAPY3GIqaG9eG6pbR_bl06GfZ2SaaN3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384956494668-3pps1o8u67r9789ag3f3uljhklb8uvoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

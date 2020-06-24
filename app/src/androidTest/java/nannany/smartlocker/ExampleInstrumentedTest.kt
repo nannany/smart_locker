@@ -1,4 +1,4 @@
-package nannany.smart_locker
+package nannany.smartlocker
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

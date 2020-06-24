@@ -1,4 +1,4 @@
-package nannany.smart_locker
+package nannany.smartlocker
 
 import org.junit.Test
 
