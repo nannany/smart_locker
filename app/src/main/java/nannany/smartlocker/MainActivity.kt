@@ -9,6 +9,7 @@ import android.widget.Button
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -19,9 +20,7 @@ import com.google.firebase.ktx.Firebase
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var auth: FirebaseAuth
-    // [END declare_auth]
 
-    //        private lateinit var binding: ActivityMainBinding
     private lateinit var googleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +28,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //        binding = ActivityGoogleBinding.inflate(layoutInflater)
 
         setContentView(R.layout.activity_main)
-        findViewById<Button>(R.id.sign_in_button).setOnClickListener(this)
+        findViewById<SignInButton>(R.id.sign_in_button).setOnClickListener(this)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
@@ -64,7 +63,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 Log.d(TAG, "firebaseAuthWithGoogle:" + account.id)
                 firebaseAuthWithGoogle(account.idToken!!)
             } catch (e: ApiException) {
-                Log.w(TAG, "Google sign in failed", e)
+                Log.w(TAG, "Google signin failed", e)
                 updateUI(null)
             }
         }
@@ -87,6 +86,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun updateUI(user: FirebaseUser?) {
+        if (user != null) {
+            Log.d(TAG, "user not equal null")
+        } else {
+            Log.d(TAG, "user equal null")
+            // 違う画面にいく
+
+        }
 
     }
 
